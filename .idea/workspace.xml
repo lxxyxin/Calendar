@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfb9379c-9c49-4ad1-bb8b-2ff56560fd50" name="Changes" comment="using System.out.println">
-      <change afterPath="$PROJECT_DIR$/src/Sum.java" afterDir="false" />
+    <list default="true" id="cfb9379c-9c49-4ad1-bb8b-2ff56560fd50" name="Changes" comment="using Scanner, string to integer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662813173814</updated>
-      <workItem from="1662813175375" duration="2266000" />
+      <workItem from="1662813175375" duration="2983000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <created>1662813294586</created>
@@ -69,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662814029773</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="using Scanner, string to integer">
+      <created>1662816758344</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662816758344</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +96,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit test" />
     <MESSAGE value="using System.out.println" />
-    <option name="LAST_COMMIT_MESSAGE" value="using System.out.println" />
+    <MESSAGE value="using Scanner, string to integer" />
+    <option name="LAST_COMMIT_MESSAGE" value="using Scanner, string to integer" />
   </component>
 </project>
