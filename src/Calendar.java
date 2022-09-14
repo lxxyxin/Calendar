@@ -17,9 +17,11 @@ public class Calendar {
         System.out.println("달을 입력하세요.");
         Scanner scanner = new Scanner(System.in);
         Calendar cal = new Calendar();
-        int month = scanner.nextInt();
+        int num = scanner.nextInt();
+        for (int i=0;i<num;i++) {
+            int month = scanner.nextInt();
+            System.out.printf("%d월은 %d일까지 있습니다.\n", month, cal.GetMaxDaysOfMonth(month));
+        }
         scanner.close();
-        System.out.printf("%d월은 %d일까지 있습니다.",month,cal.GetMaxDaysOfMonth(month));
-
     }
 }
