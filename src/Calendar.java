@@ -1,5 +1,9 @@
 import java.util.Scanner;
 public class Calendar {
+    private final int[] MaxDaysOfMonth = {31,28,31,30,31,30,31,31,30,31,30,31};
+    public int GetMaxDaysOfMonth(int month){
+        return MaxDaysOfMonth[month -1];
+    }
     public static void main(String[] args) {
         System.out.println(" 일 월 화 수 목 금 토");
         System.out.println("-------------------");
@@ -12,38 +16,10 @@ public class Calendar {
         //숫자를 입력받아 해당하는 달의 최대 일수를 출력하는 프로그램
         System.out.println("달을 입력하세요.");
         Scanner scanner = new Scanner(System.in);
-        String a = scanner.nextLine();
-        int month = Integer.parseInt(a);
-        int day;
-        if (month >0 && month <13) {
-            if (month == 1) {
-                day = 31;
-            } else if (month == 2) {
-                day = 28;
-            } else if (month == 3) {
-                day = 31;
-            } else if (month == 4) {
-                day = 30;
-            } else if (month == 5) {
-                day = 31;
-            } else if (month == 6) {
-                day = 30;
-            } else if (month == 7) {
-                day = 31;
-            } else if (month == 8) {
-                day = 31;
-            } else if (month == 9) {
-                day = 30;
-            } else if (month == 10) {
-                day = 31;
-            } else if (month == 11) {
-                day = 30;
-            } else {
-                day = 31;
-            }
-            System.out.println(month + "월은 " +day + "일까지 있습니다.");
-        } else {
-            System.out.println("ㅌㅌ");
-        }
+        Calendar cal = new Calendar();
+        int month = scanner.nextInt();
+        scanner.close();
+        System.out.printf("%d월은 %d일까지 있습니다.",month,cal.GetMaxDaysOfMonth(month));
+
     }
 }
