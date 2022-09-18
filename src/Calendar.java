@@ -10,17 +10,50 @@ public class Calendar {
         }
     }
 
-    public void printCalendar(int year, int month) {
+    public void printSelectDayCalendar(int year, int month, String day) {
         System.out.printf("    %4d년%3d월   \n", year, month);
-        System.out.println("  일 월 화 수 목 금 토");
+        System.out.println(" SU MO TU WE TH FR SA");
         System.out.println(" -------------------");
 
         int maxDay = getMaxDaysOfMonth(year, month);
-
-        for (int i = 1; i <= maxDay; i++) {
-            System.out.printf("%3d", i);
-            if (i % 7 == 0) {
+        int startDay = 0;
+        int col=1;
+        switch (day) {
+            case "SU":
+                startDay = 0;
+                break;
+            case "MO":
+                startDay = 1;
+                break;
+            case "TU":
+                startDay =2;
+                break;
+            case "WE":
+                startDay =3;
+                break;
+            case "TH":
+                startDay =4;
+                break;
+            case "FR":
+                startDay =5;
+                break;
+            case "SA":
+                startDay =6;
+                break;
+            default:
+                break;
+        }
+        for (int space=0;space<startDay;space++){
+            String blank = " ";
+            System.out.printf("%3s",blank);
+            col++;
+        }
+        for(int printDay = 1;printDay<=maxDay;printDay++){
+            System.out.printf("%3d",printDay);
+            col++;
+            if(col>7){
                 System.out.println();
+                col =1;
             }
         }
         System.out.println();
